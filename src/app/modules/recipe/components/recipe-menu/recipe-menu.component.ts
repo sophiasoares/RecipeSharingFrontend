@@ -31,7 +31,7 @@ export class RecipeMenuComponent implements OnInit {
   }
 
   navigateToRoute(): void {
-    this.router.navigate(['/create']);
+    this.router.navigate(['/add']);
   }  
 
   toggleSort(): void {

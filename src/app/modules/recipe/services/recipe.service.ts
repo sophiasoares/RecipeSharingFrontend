@@ -11,13 +11,13 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class RecipeService {
   filteredRecipes: Recipe[] = [];
   httpOptions = { headers: new HttpHeaders({ 'Content-Type': 'application/json' })};
-  private recipesUrl = 'http://localhost:3000/recipes';  // URL to JSON Server API
+  private recipesUrl = 'http://localhost:8080';  // URL to web api
 
   constructor(private http: HttpClient) { }
 
   // Fetch all recipes
   getAllRecipes(): Observable<Recipe[]> {
-    return this.http.get<Recipe[]>(this.recipesUrl)
+    return this.http.get<Recipe[]>(`${this.recipesUrl}/recipes/all`)
       .pipe(
         tap(_ => console.log('fetched recipes')),
         catchError(this.handleError<Recipe[]>('getRecipes', []))
@@ -26,7 +26,7 @@ export class RecipeService {
 
   // Fetch recipe by id 
   getRecipeById(id: number): Observable<Recipe> {
-    const url = `${this.recipesUrl}/${id}`;
+    const url = `${this.recipesUrl}/recipes/find/${id}`;
     return this.http.get<Recipe>(url).pipe(
       tap(_ => console.log(`fetched recipe id=${id}`)),
       catchError(this.handleError<Recipe>(`getRecipe id=${id}`))
@@ -35,7 +35,7 @@ export class RecipeService {
 
   // Add a new recipe 
   addRecipe(recipe: Recipe): Observable<Recipe> {
-    return this.http.post<Recipe>(this.recipesUrl, recipe, this.httpOptions).pipe(
+    return this.http.post<Recipe>(`${this.recipesUrl}/recipes/add`, recipe, this.httpOptions).pipe(
       tap((newRecipe: Recipe) => console.log(`added recipe w/ id=${newRecipe.id}`)),
       catchError(this.handleError<Recipe>('addRecipe'))
     );
@@ -43,7 +43,7 @@ export class RecipeService {
 
   // Update the recipe on the server
   updateRecipe(recipe: Recipe): Observable<any> {
-    const url = `${this.recipesUrl}/${recipe.id}`;
+    const url = `${this.recipesUrl}/recipes/edit/${recipe.id}`;
     return this.http.put(url, recipe, this.httpOptions).pipe(
       tap(_ => console.log(`updated recipe id=${recipe.id}`)),
       catchError(this.handleError<any>('updateRecipe'))
@@ -52,7 +52,7 @@ export class RecipeService {
 
   // Delete the recipe from the server
   deleteRecipe(id: number): Observable<Recipe> {
-    const url = `${this.recipesUrl}/${id}`;
+    const url = `${this.recipesUrl}/recipes/delete/${id}`;
     return this.http.delete<Recipe>(url, this.httpOptions).pipe(
       tap(_ => console.log(`deleted recipe id=${id}`)),
       catchError(this.handleError<Recipe>('deleteRecipe'))

@@ -14,7 +14,7 @@ const routes: Routes = [
       { path: '', component: RecipeListComponent, pathMatch: 'full' },
     ]
   },
-  { path: 'create', component: RecipeCreateEditComponent },
+  { path: 'add', component: RecipeCreateEditComponent },
   { path: 'detail/:id', component: RecipeDetailsComponent },
   { path: 'edit/:id', component: RecipeCreateEditComponent }
 ];

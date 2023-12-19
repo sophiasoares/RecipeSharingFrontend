@@ -44,7 +44,7 @@ export class RecipeCreateEditComponent implements OnInit {
     });
 
     this.currentRoute = this.checkRoute();
-    if (this.currentRoute == 'create') {
+    if (this.currentRoute == 'add') {
       this.title = 'Create Recipe';
     } else if (this.currentRoute == 'edit') {
       this.title = 'Edit Recipe';
@@ -57,8 +57,8 @@ export class RecipeCreateEditComponent implements OnInit {
   checkRoute(): string {
     let currentRoute = '';
     this.activatedRoute.url.subscribe(urlSegments => {
-      if (urlSegments.length > 0 && urlSegments[0].path === 'create') {
-        currentRoute = 'create';
+      if (urlSegments.length > 0 && urlSegments[0].path === 'add') {
+        currentRoute = 'add';
       } else if (urlSegments.length > 0 && urlSegments[0].path === 'edit') {
         currentRoute = 'edit';
       }
@@ -90,7 +90,7 @@ export class RecipeCreateEditComponent implements OnInit {
 
     if (this.currentRoute == 'edit') {
       this.updateRecipe(formattedRecipe);
-    } else if (this.currentRoute == 'create') {
+    } else if (this.currentRoute == 'add') {
       this.addRecipe(formattedRecipe);
     }
   }
