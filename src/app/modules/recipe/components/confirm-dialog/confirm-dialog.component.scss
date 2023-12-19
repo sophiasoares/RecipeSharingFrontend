@@ -1,0 +1,28 @@
+@import './_variables.scss';
+
+.mat-mdc-dialog-title {
+    color: $body-bg;
+    font-size: 24px;
+    font-family: $app-font-family;
+}
+
+.mat-mdc-dialog-content {
+    color: $body-bg;
+    font-size: 20px;
+    font-family: $app-font-family;
+}
+
+.mat-mdc-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: $body-bg;
+    color: $primary-color;
+    padding: 10px;
+}
+
+.dialog-container {
+    background-color: $primary-color;
+}

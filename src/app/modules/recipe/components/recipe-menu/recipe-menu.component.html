@@ -1,0 +1,11 @@
+<div class="search-sort">
+    <div [class.shadow-effect]="inputFocused" class="search-bar">
+        <input type="search" (input)="onSearchChange($event)" placeholder="Search" (focus)="inputFocused = true" (blur)="inputFocused = false">
+    </div>    
+
+    <button mat-button (click)="navigateToRoute()">Create recipe</button>
+
+    <button mat-button (click)="toggleSort()">Sort by name</button>
+</div>
+
+<app-recipe-list [filterValue]="searchTerm" (recipesUpdated)="handleRecipesUpdate($event)"></app-recipe-list>

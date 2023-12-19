@@ -1,0 +1,9 @@
+@import './_variables.scss';
+
+.title {
+    text-align: center;
+    font-size: $title-font-size;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: $default-shadow;
+}

@@ -1,0 +1,53 @@
+@import './_variables.scss';
+
+.search-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: $body-bg;
+
+   .search-bar {
+        background-color: $primary-color;
+        color: $body-bg;
+        border-radius: 15px;
+        border: none;
+        font-size: $button-font-size;
+        padding: 20px;
+        transition: box-shadow 0.3s ease;
+        box-shadow: $default-shadow;
+
+        &.shadow-effect {
+            box-shadow: $focus-hover-shadow;
+        }
+
+        input[type="search"] {
+            border: none; 
+            outline: none; 
+            background-color: $primary-color;
+            font-size: $button-font-size;
+            color: $body-bg;
+
+            &::placeholder {
+                color: $body-bg;
+                font-weight: $button-search-bar-weight;
+            }
+
+            &:-ms-input-placeholder {
+                color: $body-bg;
+                font-weight: $button-search-bar-weight;
+            }
+
+            &::-ms-input-placeholder {
+                color: $body-bg;
+                font-weight: $button-search-bar-weight;
+            }
+
+            &::-webkit-input-placeholder {
+                color: $body-bg;
+                font-weight: $button-search-bar-weight;
+            }
+        }    
+   }
+}
+

@@ -1,0 +1,12 @@
+<div class="recipe-list-container">
+    <mat-list>
+        <div class="list-item" *ngFor="let recipe of filteredRecipes">
+            <a routerLink="/detail/{{recipe.id}}">
+                <h3 matLine>{{ recipe.name | capitalizeNames }}</h3>
+                <p matLine>{{ recipe.description }}</p>
+                <p matLine class="ingredients">Ingredients: {{ recipe.ingredients | formatIngredients}}</p>
+            </a>
+            <div class="arrow-icon"><i class="fas fa-solid fa-chevron-right"></i></div>
+        </div>
+    </mat-list>
+</div> 

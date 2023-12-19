@@ -1,0 +1,57 @@
+@import './_variables.scss';
+
+.recipe-list-container {
+    padding: 20px;
+    background-color: $body-bg;
+
+    .list-item {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: $primary-color;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        box-shadow: 5px 8px 8px rgba(0, 0, 0, 0.2);
+        
+        a {
+            flex: 1;
+            max-width: 95%;
+            font-family: $app-font-family;
+            text-decoration: none;
+            color: $dark-color;
+
+            &:hover {
+                text-decoration: none;
+            }
+
+            h3, p {
+                margin: 0;
+                white-space: normal;
+                word-break: break-word;
+            }
+    
+            h3 {
+                font-size: $name-font-size;
+            }
+    
+            p {
+                font-size: $description-font-size;
+                margin-top: 10px; 
+
+                &.ingredients {
+                    font-size: $ingredients-font-size;
+                }
+            }
+        }
+
+        .arrow-icon {
+            min-width: 5%;
+            flex-shrink: 0; /* Prevent the arrow icon from shrinking */
+            font-size: 24px;
+            color: $dark-color;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}

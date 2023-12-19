@@ -1,0 +1,46 @@
+@import './_variables.scss';
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.recipe-container {
+    border: 2px solid $primary-color;
+    padding: 30px;
+    margin: 30px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.recipe-detail-container {
+    margin-top: 20px;
+    background-color: $body-bg;
+
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 5px; 
+
+    }
+
+    li, p {
+        font-size: $description-font-size;
+    }
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+@media (max-width: 900px) { 
+    .recipe-container {
+      width: 70%;
+    }
+  }

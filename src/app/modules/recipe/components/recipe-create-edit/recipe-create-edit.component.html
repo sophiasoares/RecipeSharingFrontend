@@ -1,0 +1,33 @@
+<h1>{{ title }}</h1>
+<div class="recipe-form-container">
+    <form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
+        <div class="form-field">
+            <label for="name">Name</label> <br>
+            <input type="text" id="name" formControlName="name">
+            <p *ngIf="(recipeForm.controls['name'].errors?.['required'] || recipeForm.controls['name'].errors?.['notEmpty']) && recipeForm.controls['name'].touched">
+                A name is required
+            </p>
+        </div>
+
+        <div class="form-field">
+            <label for="description">Description</label> <br>
+            <textarea autoExpand id="description" formControlName="description"></textarea>
+            <p *ngIf="(recipeForm.controls['description'].errors?.['required'] || recipeForm.controls['description'].errors?.['notEmpty']) && recipeForm.controls['description'].touched">
+                A description is required</p>
+        </div>
+
+        <div class="form-field">
+            <label for="ingredients">Ingredients <span>(Please type each ingredient in a different line)</span></label> <br>
+            <textarea autoExpand id="ingredients" formControlName="ingredients"></textarea>
+            <p *ngIf="(recipeForm.controls['ingredients'].errors?.['required'] || recipeForm.controls['ingredients'].errors?.['notEmpty']) && recipeForm.controls['ingredients'].touched">
+                The ingredients are required</p>
+        </div>
+
+        <div class="form-field">
+            <label for="instructions">Instructions <span>(Please type each step in a different line)</span></label> <br>
+            <textarea autoExpand id="instructions" formControlName="instructions"></textarea>
+        </div>
+        <button type="button" (click)="goBack()">Back</button>
+        <button type="submit">Save</button>
+    </form>
+</div>

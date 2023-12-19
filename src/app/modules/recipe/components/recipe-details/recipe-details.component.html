@@ -1,0 +1,25 @@
+<div class="recipe-container">
+    <h1>Details</h1>
+    <div class="recipe-detail-container">
+        <h2>{{ recipe.name | capitalizeNames }}</h2>
+        <p>{{ recipe.description }}</p>
+        <p>Created on: {{ recipe.dateCreated | date : 'longDate' }}</p>
+        <div>
+            <h3>Ingredients:</h3>
+            <ul>
+                <li *ngFor="let ingredient of recipe?.ingredients">{{ ingredient }}</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Steps:</h3>
+            <ol>
+                <li *ngFor="let instruction of recipe?.instructions">{{ instruction }}</li>
+            </ol>
+        </div>
+    </div>
+    <div class="buttons-container">
+        <button (click)="goBack()">Back</button>
+        <button (click)="goToEdit()">Edit</button>
+        <button (click)="deleteRecipe()">Delete</button>
+    </div>
+</div>

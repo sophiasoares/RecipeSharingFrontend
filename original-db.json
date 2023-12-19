@@ -1,0 +1,289 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "Spaghetti Bolognese",
+            "description": "A classic Italian dish with a rich tomato sauce.",
+            "dateCreated": "2019-01-01T00:00:00.000Z",
+            "ingredients": [
+                "Spaghetti",
+                "Ground Beef",
+                "Tomato Sauce",
+                "Onion",
+                "Garlic"
+            ],
+            "instructions": [
+                "Boil spaghetti in salted water until al dente.",
+                "Cook ground beef in a pan until browned.",
+                "Add chopped onions and minced garlic to the beef, cooking until fragrant.",
+                "Stir in tomato sauce and simmer for 15 minutes.",
+                "Serve the sauce over spaghetti with a sprinkle of Parmesan cheese."
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Chicken Curry",
+            "description": "A flavorful Indian curry with tender chicken pieces.",
+            "dateCreated": "2020-05-02T00:00:00.000Z",
+            "ingredients": [
+                "Chicken",
+                "Curry Powder",
+                "Coconut Milk",
+                "Tomatoes",
+                "Onion"
+            ],
+            "instructions": [
+                "Season chicken pieces with curry powder and salt.",
+                "In a pot, brown the chicken on both sides, then set aside.",
+                "Sauté chopped onions until translucent, then add diced tomatoes.",
+                "Return chicken to the pot, add coconut milk, and simmer until chicken is cooked through.",
+                "Garnish with cilantro and serve with rice or naan."
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Chicken Noodle Soup",
+            "description": "A hearty soup with tender chicken, vegetables, and noodles.",
+            "dateCreated": "2021-05-28T00:00:00.000Z",
+            "ingredients": [
+                "Chicken",
+                "Egg Noodles",
+                "Carrots",
+                "Celery",
+                "Onion"
+            ],
+            "instructions": [
+                "In a large pot, bring chicken broth to a boil.",
+                "Add chopped carrots, celery, and onion, and simmer until tender.",
+                "Add egg noodles and simmer for 8 minutes.",
+                "Stir in cooked chicken and season with salt and pepper to taste."
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Hamburger",
+            "description": "A classic American burger with melted cheese and all the fixings.",
+            "dateCreated": "2021-06-01T00:00:00.000Z",
+            "ingredients": [
+                "Ground Beef",
+                "Hamburger Buns",
+                "Cheddar Cheese",
+                "Lettuce",
+                "Tomato"
+            ],
+            "instructions": [
+                "Form ground beef into patties and season with salt and pepper.",
+                "Grill patties over high heat until desired doneness.",
+                "Top patties with cheese and melt.",
+                "Serve on toasted buns with lettuce, tomato, and your favorite condiments."
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Chicken Parmesan",
+            "description": "A classic Italian dish with breaded chicken and tomato sauce.",
+            "dateCreated": "2022-12-22T00:00:00.000Z",
+            "ingredients": [
+                "Chicken Breasts",
+                "Bread Crumbs",
+                "Tomato Sauce",
+                "Mozzarella Cheese",
+                "Parmesan Cheese"
+            ],
+            "instructions": [
+                "Season chicken breasts with salt and pepper.",
+                "Dredge chicken in bread crumbs and fry until golden brown.",
+                "Top chicken with tomato sauce and mozzarella cheese.",
+                "Bake until cheese is melted and bubbly.",
+                "Garnish with Parmesan cheese and serve with pasta."
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Chicken Salad",
+            "description": "A refreshing salad with tender chicken and a tangy dressing.",
+            "dateCreated": "2023-10-04T00:00:00.000Z",
+            "ingredients": [
+                "Chicken",
+                "Lettuce",
+                "Tomato",
+                "Cucumber",
+                "Onion"
+            ],
+            "instructions": [
+                "Season chicken breasts with salt and pepper.",
+                "Grill chicken until cooked through, then slice into strips.",
+                "In a large bowl, toss together lettuce, tomato, cucumber, and onion.",
+                "Top with sliced chicken and drizzle with your favorite dressing."
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Beef Stew",
+            "description": "Hearty beef stew with vegetables in a thick broth.",
+            "dateCreated": "2023-11-11T00:00:00.000Z",
+            "ingredients": [
+                "Beef",
+                "Carrots",
+                "Potatoes",
+                "Onion",
+                "Beef Stock"
+            ],
+            "instructions": [
+                "Cut beef into chunks and brown in a large pot.",
+                "Add chopped onions and cook until softened.",
+                "Stir in diced carrots and potatoes, then add beef stock.",
+                "Simmer until beef is tender and vegetables are cooked.",
+                "Season with salt and pepper to taste."
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Vegetable Stir Fry",
+            "description": "A quick and healthy vegetable stir fry.",
+            "dateCreated": "2023-08-09T00:00:00.000Z",
+            "ingredients": [
+                "Broccoli",
+                "Carrots",
+                "Bell Peppers",
+                "Soy Sauce",
+                "Ginger"
+            ],
+            "instructions": [
+                "Chop all vegetables into bite-sized pieces.",
+                "Stir-fry vegetables in a hot pan with oil, starting with the hardest ones.",
+                "Add minced ginger and soy sauce for flavor.",
+                "Cook until vegetables are tender but still crisp."
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Margherita Pizza",
+            "description": "Simple and classic pizza with tomatoes, mozzarella, and basil.",
+            "dateCreated": "2023-07-04T00:00:00.000Z",
+            "ingredients": [
+                "Pizza Dough",
+                "Tomato Sauce",
+                "Mozzarella Cheese",
+                "Basil"
+            ],
+            "instructions": [
+                "Roll out pizza dough to desired thickness.",
+                "Spread tomato sauce evenly over the dough.",
+                "Top with slices of mozzarella cheese and fresh basil leaves.",
+                "Bake in a preheated oven until the crust is golden and cheese is bubbly."
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Grilled Cheese Sandwich",
+            "description": "A classic grilled cheese sandwich with melted cheese.",
+            "dateCreated": "2021-10-18T00:00:00.000Z",
+            "ingredients": [
+                "Bread",
+                "Cheese",
+                "Butter"
+            ],
+            "instructions": [
+                "Butter one side of each bread slice.",
+                "Place cheese between the non-buttered sides of the bread slices.",
+                "Heat a skillet over medium heat and grill the sandwich until golden brown on both sides and the cheese is melted."
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Tomato Soup",
+            "description": "A creamy tomato soup, perfect as a comfort food.",
+            "dateCreated": "2021-02-25T00:00:00.000Z",
+            "ingredients": [
+                "Tomatoes",
+                "Onion",
+                "Garlic",
+                "Chicken/Vegetable Stock",
+                "Cream"
+            ],
+            "instructions": [
+                "Sauté chopped onions and garlic until translucent.",
+                "Add chopped tomatoes and cook until they soften.",
+                "Pour in chicken or vegetable stock and bring to a simmer.",
+                "Blend the mixture until smooth, return to the pot, and stir in cream.",
+                "Season with salt and pepper to taste."
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Baked Salmon",
+            "description": "Simple and delicious baked salmon with herbs.",
+            "dateCreated": "2020-03-27T00:00:00.000Z",
+            "ingredients": [
+                "Salmon Fillets",
+                "Lemon",
+                "Garlic",
+                "Dill",
+                "Olive Oil"
+            ],
+            "instructions": [
+                "Preheat the oven and place salmon fillets in a baking dish.",
+                "Season with minced garlic, dill, salt, and pepper.",
+                "Drizzle with olive oil and lemon juice.",
+                "Bake until salmon is cooked through and flakes easily."
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Fish and Chips",
+            "description": "Classic British fish and chips with a side of tartar sauce.",
+            "dateCreated": "2019-12-25T00:00:00.000Z",
+            "ingredients": [
+                "White Fish",
+                "Potatoes",
+                "Flour",
+                "Beer",
+                "Tartar Sauce"
+            ],
+            "instructions": [
+                "Cut potatoes into chips, fry until golden, and drain.",
+                "Make a batter with flour and beer, coat fish fillets, and deep fry until crisp.",
+                "Serve fish and chips with tartar sauce and lemon wedges."
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Chocolate Cake",
+            "description": "Rich and moist chocolate cake with chocolate frosting.",
+            "dateCreated": "2019-08-29T00:00:00.000Z",
+            "ingredients": [
+                "Flour",
+                "Cocoa Powder",
+                "Sugar",
+                "Eggs",
+                "Butter"
+            ],
+            "instructions": [
+                "Mix flour, cocoa powder, and sugar in a bowl.",
+                "Add eggs and melted butter, and blend until smooth.",
+                "Pour the batter into a greased cake tin and bake until a skewer inserted comes out clean.",
+                "Let the cake cool before applying chocolate frosting."
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Caprese Salad",
+            "description": "Fresh salad with tomatoes, mozzarella, and basil.",
+            "dateCreated": "2022-07-09T00:00:00.000Z",
+            "ingredients": [
+                "Tomatoes",
+                "Mozzarella Cheese",
+                "Basil",
+                "Olive Oil",
+                "Balsamic Vinegar"
+            ],
+            "instructions": [
+                "Slice tomatoes and mozzarella cheese into 1/4 inch thick slices.",
+                "Arrange slices alternately on a plate, overlapping for effect.",
+                "Drizzle olive oil and balsamic vinegar over the arranged slices.",
+                "Sprinkle with salt and pepper to taste and garnish with fresh basil leaves."
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+@import './_variables.scss';
+
+h1 {
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+}
+
+.recipe-form-container {
+    padding: 20px;
+    padding-left: 50px;
+    background-color: $body-bg;
+
+    .form-field {
+        width: 100%;
+        margin-bottom: 15px;
+
+        p {
+            margin-top: 5px;
+            font-size: $add-info-font-size;
+            font-weight: bold;
+            color: $error-color;
+        }
+    }
+
+    label {
+        box-sizing: content-box;
+        color: $primary-color;
+        font-size: $description-font-size;
+
+        span {
+            font-size: $add-info-font-size;
+        }
+    }
+
+    textarea, input {
+        margin-top: 10px;
+        min-width: 70%;
+        font-size: $description-font-size;
+        border: 1px solid $accent-color;
+        border-radius: $app-border-radius;
+        background-color: $primary-color;
+        color: $dark-color;
+        padding: 0 15px;
+
+        &:focus {
+            outline: none;
+            box-shadow: $focus-hover-shadow;
+        }
+    }
+
+    textarea {
+        min-height: 80px;
+        max-height: 220px;
+        padding: 12px 15px;
+        resize: none; 
+    }
+
+    input {
+        min-height: 30px;
+    }
+
+    button {
+        margin-right: 20px;
+    }
+}

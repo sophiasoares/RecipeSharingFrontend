@@ -1,0 +1,37 @@
+@import '_variables.scss';
+
+html, body {
+  font-family: $app-font-family;
+  background-color: $body-bg;
+  color: $primary-color;
+}
+
+button {
+  background-color: $primary-color;
+  color: $body-bg;
+  border-radius: $app-border-radius;
+  border: none;
+  font-size: $button-font-size;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: $default-shadow;
+  cursor: pointer;
+  font-weight: $button-search-bar-weight;
+
+  &:hover {
+    box-shadow: $focus-hover-shadow;
+  }
+}
+
+input, textarea, button {
+  font-family: $app-font-family;
+}
+
+.custom-snackbar, .mdc-snackbar__surface, .mdc-snackbar__label {
+  background-color: $accent-color !important; 
+  color: $dark-color !important;
+  border-radius: 5px !important;
+}
+
+
+
