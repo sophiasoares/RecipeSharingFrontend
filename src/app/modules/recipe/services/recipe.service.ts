@@ -43,7 +43,7 @@ export class RecipeService {
 
   // Update the recipe on the server
   updateRecipe(recipe: Recipe): Observable<any> {
-    const url = `${this.recipesUrl}/recipes/edit/${recipe.id}`;
+    const url = `${this.recipesUrl}/recipes/edit`;
     return this.http.put(url, recipe, this.httpOptions).pipe(
       tap(_ => console.log(`updated recipe id=${recipe.id}`)),
       catchError(this.handleError<any>('updateRecipe'))

@@ -70,6 +70,7 @@ export class RecipeCreateEditComponent implements OnInit {
     const recipeId = this.activatedRoute.snapshot.params['id'];
     if (recipeId) {
       this.recipeService.getRecipeById(recipeId).subscribe(recipeData => {
+        this.recipe = recipeData;
         const formData = {
           ...recipeData,
           ingredients: recipeData.ingredients.join('\n'), // Convert the array of strings to a single string with new lines
@@ -98,7 +99,6 @@ export class RecipeCreateEditComponent implements OnInit {
   updateRecipe(updatedRecipe: Recipe): void {
     if (updatedRecipe) {
       updatedRecipe.id = this.activatedRoute.snapshot.params['id'];
-      console.log(updatedRecipe);
       this.recipeService.updateRecipe(updatedRecipe).subscribe(() => this.recipeService.goBack());
       this.snackbarService.openSnackBar(updatedRecipe.name + ' was updated successfully');
     } else {
@@ -136,7 +136,7 @@ export class RecipeCreateEditComponent implements OnInit {
       ...this.recipeForm.value, 
       name: formattedName,
       description: formattedDescription,
-      dateCreated: new Date(),
+      dateCreated: this.currentRoute == 'edit' ? this.recipe.dateCreated : new Date(),
       ingredients: formattedIngredients,
       instructions: formattedInstructions,
     };
